@@ -19,7 +19,7 @@
 <body>
     <header> <!-- hacer que el nav sea invisible y fijo -->
         <nav class="navbar navbar-expand-lg fixed-top">
-            <div class="container-fluid">
+            <div class="container">
                 <a class="navbar-brand text-light" href="#"><img src="assets/img/viajes.svg" alt="logo" class="nav_logo-size">
                     Viajes Chile</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -27,7 +27,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
                             <a class="nav-link text-light" href="#hero">Inicio</a>
                         </li>
@@ -70,12 +70,12 @@
         </div>
     </section>
     <!-- Section quienes somos -->
-    <section id="quienesSomos">
-        <h1>¿QUIÉNES SOMOS?</h1>
+    <section id="quienesSomos" class="max-width-1000 my-5 d-none d-lg-block"> <!-- d-none d-lg-block - solo se muetra en pantallas de lg hacia arriba -->
+        <h1 class="text-center">¿QUIÉNES SOMOS?</h1>
         <hr>
-        <div class="row">
+        <div class="row  my-5">
             <article class="quienesSomos_tarjetas col-lg-4 col-12">
-                <div class="tarjetas_icono drop-down text-center">
+                <div class="tarjetas_icono drop-down text-center colorFondo-celeste">
                     <i class="fa-solid fa-plane"></i>
                 </div>
                 <div class="tarjeta_texto">
@@ -93,14 +93,14 @@
                         omnis animi a deleniti pariatur sapiente voluptates officia 
                         facere earum eaque, sint natus commodi.
                     </p>
-                    <div class="tarjetas_icono drop-up text-center">
+                    <div class="tarjetas_icono drop-up text-center colorFondo-celeste">
                         <i class="fa-solid fa-mountain"></i>
                     </div>
                 </div>
             </article>
             <article class="quienesSomos_tarjetas col-lg-4 col-12">
-                <div class="tarjetas_icono drop-down text-center">
-                    <i class="fa-solid fa-route"></i>
+                <div class="tarjetas_icono drop-down text-center colorFondo-celeste">
+                    <i class="fa-solid fa-route "></i>
                 </div>
                 <div class="tarjeta_texto">
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -114,54 +114,59 @@
 
     </section>
     <!-- Section Destacados -->
-    <section id="destacados">
-        <h1>DESTACADOS</h1>
+    <section id="destacados" class="max-width-1000 my-5">
+        <h1 class="text-center">DESTACADOS</h1>
         <hr>
         <div class="row">
-            <div class="destacados_tarjeta col-lg-3 col-12">
-                <div class="card" style="width: 18rem;">
+            <div class="destacados_tarjeta col-lg-3 col-md-6 col-12">
+                <div class="card">
                     <img src="assets/img/card1.jpg" class="card-img-top" alt="Paisaje cordillera con nubes">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-body colorFondo-celeste">
+                        <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Molestiae dolorem delectus facere cum dolorum fugit similique, ea beatae 
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="destacados_tarjeta col-lg-3 col-12">
-                <div class="card" style="width: 18rem;">
+            <div class="destacados_tarjeta col-lg-3 col-md-6 col-12">
+                <div class="card">
                     <img src="assets/img/card2.jpg" class="card-img-top" alt="Paisaje reflejo de montañas en el agua">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-body colorFondo-celeste">
+                        <h5 class="card-title">consectetur adipisicing elit</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Voluptatibus molestias et, laudantium quis in fugiat rerum omnis ab quasi 
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="destacados_tarjeta col-lg-3 col-12">
-                <div class="card" style="width: 18rem;">
+            <div class="destacados_tarjeta col-lg-3 col-md-6 col-12">
+                <div class="card">
                     <img src="assets/img/card3.jpg" class="card-img-top" alt="Paisaje con ave en el agua">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-body colorFondo-celeste">
+                        <h5 class="card-title">Dolore maiores similique est eos enim esse.</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Quidem, porro? Vitae quo libero sequi perferendis, quos culpa, asperiores nostrum 
+                        </p>
                     </div>
                 </div>
             </div>
-            <div class="destacados_tarjeta col-lg-3 col-12">
-                <div class="card" style="width: 18rem;">
+            <div class="destacados_tarjeta col-lg-3 col-md-6 col-12">
+                <div class="card">
                     <img src="assets/img/card4.jpg" class="card-img-top" alt="Paisaje Bosque">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
+                    <div class="card-body colorFondo-celeste">
+                        <h5 class="card-title"> Voluptatibus molestias et</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Dolore maiores similique est eos enim esse. Illum, laboriosam nam. Nesciunt, 
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- Section Contactos -->
-    <section id="contacto">
+    <section id="contacto" class="max-width-1000 my-5">
+        <h1 class="text-center">CONTACTO</h1>
         <!-- Form  -->
         <form>
             <form class="px-3">
@@ -176,16 +181,16 @@
                 <div class="mb-3">
                     <label for="mensaje" class="form-label fw-bold">Mensaje</label>
                     <br>
-                    <textarea name="mensaje" id="mensaje" class="form-control" placeholder="Escribe Aquí tu mensaje." cols="30" rows="10"></textarea>
+                    <textarea name="mensaje" id="mensaje" class="form-control" cols="30" rows="10"></textarea>
                 </div>
                 <div class="d-flex">
-                    <button type="submit" class="btn btn-primary with-color px-4">Enviar</button>
+                    <button type="submit" class="btn btn-primary colorFondo-celeste px-4">Enviar</button>
                 </div>
             </form>
         </form>
     </section>
     <!-- Footer -->
-    <footer>
+    <footer class="colorFondo-celeste">
         <div class="row">
             <div class="text-center col-6">
                 <p>VIAJES CHILE</p>

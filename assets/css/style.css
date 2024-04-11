@@ -4,6 +4,13 @@
     padding: 0;
 }
 
+
+body{ /* Colocamos el color de fondo y color de letra, ya que será así en casi toda la página */
+    background-color: black;
+    color: white;
+}
+
+
 /* Estilo de Header */
 nav{
     color: rgba(0, 0, 0, 0); /* hacemos que el navbar tenga un color transparente */
@@ -12,5 +19,61 @@ nav{
     height: 40px;
 }
 .text-light{ /* Al texto blanco le agrego una sombra negra, para darle un poco de visibilidad */
-    text-shadow: 1px 1px 5px black;
+    text-shadow: 1px 1px 3px black;
+}
+
+
+/* Estilo de quienes somos */
+#quienesSomos i{
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+
+/* Section Destacados */
+.card{
+    margin: 1rem auto;
+    color: white;
+}
+.card img{
+    height: 13rem;
+}
+.card-body{
+    height: 15rem;
+}
+
+/* Estilo del Footer */
+footer{
+    height: 80px;
+    align-content: center; /* alinea verticalmente el contenido */
+    font-size: 30px;
+}
+
+/* Generales */
+
+
+.colorFondo-celeste{
+    background-color: #0DCAF0;
+}
+
+.max-width-1000{
+    max-width: 1000px;
+    margin:auto;
+}
+
+/* Media Query */
+@media(max-width: 991px){ /* Si la pantalla es pequeña, la card una el 80% del ancho */
+    .card{  
+        width: 80%;
+    }
+}
+
+@media(max-width: 767px){
+    .card img{
+        height: auto;
+    }
+    .card-body{
+        height: auto;
+    }
 }
