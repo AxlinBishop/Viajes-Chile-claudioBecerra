@@ -1,0 +1,16 @@
+/* soft reset de style */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo de Header */
+nav{
+    color: rgba(0, 0, 0, 0); /* hacemos que el navbar tenga un color transparente */
+}
+.nav_logo-size{
+    height: 40px;
+}
+.text-light{ /* Al texto blanco le agrego una sombra negra, para darle un poco de visibilidad */
+    text-shadow: 1px 1px 5px black;
+}
