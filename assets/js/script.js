@@ -5,6 +5,4 @@ $(document).ready(function(){/*  todas las funciones comenzarán luego de que la
     $( document ).tooltip();
 } );
 
-
-
 });
